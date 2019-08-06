@@ -1,0 +1,23 @@
+.ihuriro {
+    text-align: center;
+    position:relative;
+    bottom: -110px;
+    
+}
+.signup {
+    /* border :1px solid black; */
+    background-color: rgb(190, 232, 248);
+    height: 10%;
+    width : 30%;
+    margin: 0 auto;
+
+    /* flex-wrap: wrap; */
+}
+.login {
+  order :1px solid black;
+    background-color: rgb(190, 232, 248);
+    height: 10%;
+    width : 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
