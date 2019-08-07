@@ -60,15 +60,15 @@
             </div>
         </div>
         <div class="login">
-            <p>Have an account? <a href="#loginmyform">Log in</a></p>
-            <form id="loginmyform">
-                <input type="text" placeholder="Phone number or email">
+            <p>Have an account? <a href="#logshow">Log in</a></p>
+            <form id="loghide">
+                <input type="text" placeholder="Phone number or email" id="loginEmail">
                 <br>
                 <br>
-                <input type="password" name="password" id="loginpassword" placeholder="password">
+                <input type="password" name="password" id="loginPassword" placeholder="password">
                 <br>
                 <br>
-                <button id="btnlogin">Log in</button>
+                <button id="btnlogin" onclick="logIn()">Log in</button>
             </form>
         </div>
     </div>

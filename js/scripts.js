@@ -18,32 +18,29 @@ firebase.initializeApp(firebaseConfig);
      console.log(error.message);
     });
   }
-  // document.getElementById("btnSignUp").addEventListener('click', e=>{
-  //   var firstName = document.getElementById("textfirstname").value;
-  //   var lastName = document.getElementById("textlastname").value;
+  function logIn(){
+    var email = document.getElementById("loginEmail").value;
+    var password = document.getElementById("loginPassword").value;
+    firebase.auth().signInWithEmailAndPassword(email, password).then(function(){window.open("about.html",'_self')}).catch(function(error) {
+     console.log(error.message);
+    });
+  }
 
-  // })
+
   function postMyComment(){
     
-    // var usersRef = ref.child("comment");
     var holdText = document.getElementById("myComment").value;
     var obj = {userText: holdText};
-    // usersRef.set(obj);
     firebase.database().ref('/Comments').push(obj).then(function(){alert("success")}).catch(function(error) {
       console.log(error.code);
      });
-    firebase.database().ref("UserData").orderByKey();
-    var userDataRef = firebase.database().ref("UserData").orderByKey();
-userDataRef.once("value")
-  .then(function(snapshot) {
-    snapshot.forEach(function(childSnapshot) {
-      var key = childSnapshot.key;
-      var childData = childSnapshot.val();              // childData will be the actual contents of the child
-
-      var name_val = childSnapshot.val().Name;
-      var id_val = childSnapshot.val().AssignedID;
-      document.getElementById("name").innerHTML = name_val;
-      document.getElementById("id").innerHTML = id_val;
-  });
- });
-}
+    }
+    
+    // $(document).ready(function(){
+    //   $("#hide").click(function(){
+    //     $("loghide").hide();
+    //   });
+    //   $("#show").click(function(){
+    //     $("logshow").show();
+    //   });
+    // });
