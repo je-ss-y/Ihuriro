@@ -8,44 +8,70 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" >
     <script src="js/jQuery.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
     <script src="js/scripts.js"></script>
     <title>Ihuriro</title>
 </head>
 <body>
-        <video autoplay muted loop id="myVideo">  <source src="video/myvideo1.mp4" type="video/mp4"></video>
+
+   <div class="first">
+            <div class="leftside">
+                         
+                <div class="nav-link">
+                               <a href="intro.html">Home</a>
+                 </div>
+                <div class="nav-link">
+                               <a href="index.html">Projects</a>
+                </div>
+                <div class="nav-link">
+                               <a href="about.html">About</a> 
+                </div>
+                          
+            </div>
+                <div class="rightside">
+                    <div class="brand">
+                        <div>IHURIRO</div>
+                    </div>
+                </div>
+    </div>
+
+    <video autoplay muted loop id="myVideo">  <source src="video/myvideo1.mp4" type="video/mp4"></video>
            
     <div class="ihuriro">
         <div class="signup">
             <h1>IHURIRO</h1>
             
-            <form id="signupmyform">
-                <input type="text" placeholder="First name...">
+            <div id="signupmyform">
+                <input type="text" placeholder="First name..." id="textfirstname">
                 <br>
                 <br>
-                <input type="text" placeholder="Last name...">
+                <input type="text" placeholder="Last name..." id="textlastname">
                 <br>
                 <br>
-                <input type="email" type="number" placeholder="Mobile number or email">
+                <input type="email" type="number" placeholder="Mobile number or email" id="textEmail">
                 <br>
                 <br>
-                <input type="password" placeholder="********">
+                <input type="password" placeholder="********" id="textPassword">
                 <br>
                 <br>
-                <button id="btnsignup">SIGN UP</button>
+                <button id="btnSignUp" onclick="signUp()">SIGN UP</button>
+            </div>
+        </div>
+        <div class="login">
+            <p>Have an account? <a href="#loginmyform">Log in</a></p>
+            <form id="loginmyform">
+                <input type="text" placeholder="Phone number or email">
+                <br>
+                <br>
+                <input type="password" name="password" id="loginpassword" placeholder="password">
+                <br>
+                <br>
+                <button id="btnlogin">Log in</button>
             </form>
         </div>
-    <div class="login">
-        <p>Have an account? <a href="#loginmyform">Log in</a></p>
-        <form id="loginmyform">
-            <input type="text" placeholder="Phone number or email">
-            <br>
-            <br>
-            <input type="password" name="password" id="loginpassword" placeholder="password">
-            <br>
-            <br>
-            <button id="btnlogin">Log in</button>
-        </form>
     </div>
-    </div>
+ 
 </body>
 </html>

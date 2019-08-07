@@ -10,3 +10,18 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+  function signUp(){
+    var email = document.getElementById("textEmail").value;
+    var password = document.getElementById("textPassword").value;
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){window.open("about.html",'_self')}).catch(function(error) {
+     console.log(error.message);
+    });
+  }
+  // document.getElementById("btnSignUp").addEventListener('click', e=>{
+  //   var firstName = document.getElementById("textfirstname").value;
+  //   var lastName = document.getElementById("textlastname").value;
+
+  // })
+ function myFunction(){
+   location.replace("directIt");
+ }
