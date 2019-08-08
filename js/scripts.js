@@ -35,7 +35,6 @@ firebase.initializeApp(firebaseConfig);
       console.log(error.code);
      });
     }
-<<<<<<< HEAD
     
     $(document).ready(function(){
       $("#loghide").hide();
@@ -43,7 +42,6 @@ firebase.initializeApp(firebaseConfig);
         $("#loghide").show();
       });
     });
-=======
   
     $(document).ready(function(){
       var ref = firebase.database().ref('/Comments');
@@ -87,4 +85,3 @@ $(document).ready(function(){
 })
 
 
->>>>>>> a44683836dffba3be19a549c2065d410522c51af
