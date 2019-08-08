@@ -16,7 +16,10 @@
 </head>
 <body>
 
-   <div class="first">
+        <video autoplay muted loop id="myVideo">  <source src="video/myvideo1.mp4" type="video/mp4"></video>
+<div>
+    
+        <div class="first">
             <div class="leftside">
                          
                 <div class="nav-link">
@@ -32,10 +35,7 @@
                             <div class="logo"><img src="css/images/logo.png"></div>
                     </div>
                 </div>
-    </div>
-<div>
-    <video autoplay muted loop id="myVideo">  <source src="video/myvideo1.mp4" type="video/mp4"></video>
-           
+    </div>   
     <div class="ihuriro">
         <div class="signup">
             <h1>IHURIRO</h1>
@@ -57,8 +57,8 @@
             </div>
         </div>
         <div class="login">
-            <p>Have an account? <a href="#logshow">Log in</a></p>
-            <form id="loghide">
+            <p>Have an account? <a id="logshow" href="#">Log in</a></p>
+            <div id="loghide">
                 <input type="text" placeholder="Phone number or email" id="loginEmail">
                 <br>
                 <br>
@@ -66,7 +66,7 @@
                 <br>
                 <br>
                 <button id="btnlogin" onclick="logIn()">Log in</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>

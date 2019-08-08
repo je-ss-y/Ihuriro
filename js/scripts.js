@@ -35,24 +35,10 @@ firebase.initializeApp(firebaseConfig);
       console.log(error.code);
      });
     }
-  // var config = {
-  //     apiKey: "AIzaSyAhgvRKrcHIlfmkTtojizNW4GVT5u_A4oU",
-  //     authDomain: "ihuri2.firebaseapp.com",
-  //     databaseURL: "https://ihuri2.firebaseio.com",
-  // }
-  // var app = firebase.initializeApp(config);
-
-  // var ref = app.database().ref('/Comments');
-
-  // ref.on('value', function(snapshot) {
-  //     console.log(snapshot.val());
-  // });
     
-    // $(document).ready(function(){
-    //   $("#hide").click(function(){
-    //     $("loghide").hide();
-    //   });
-    //   $("#show").click(function(){
-    //     $("logshow").show();
-    //   });
-    // });
+    $(document).ready(function(){
+      $("#loghide").hide();
+      $("#logshow").click(function(){
+        $("#loghide").show();
+      });
+    });
