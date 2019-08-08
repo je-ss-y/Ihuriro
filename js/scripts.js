@@ -27,14 +27,15 @@ firebase.initializeApp(firebaseConfig);
   }
 
 
-  function postMyComment(){
+  function myComment(){
     
     var holdText = document.getElementById("myComment").value;
     var obj = {userText: holdText};
-    firebase.database().ref('/Comments').push(obj).then(function(){alert("success")}).catch(function(error) {
+    firebase.database().ref('/Comments').push(obj).catch(function(error) {
       console.log(error.code);
      });
     }
+<<<<<<< HEAD
     
     $(document).ready(function(){
       $("#loghide").hide();
@@ -42,3 +43,48 @@ firebase.initializeApp(firebaseConfig);
         $("#loghide").show();
       });
     });
+=======
+  
+    $(document).ready(function(){
+      var ref = firebase.database().ref('/Comments');
+      ref.on('value', function(snapshot) {
+        snapshot.forEach(function(item) {
+          var childData = item.val();
+          $("#addcommenthere").append("<p>" + childData.userText + "</p>")
+          console.log(childData.userText);
+        });
+        $("textarea#myComment").val('');
+      });
+    });
+
+
+
+    function myPost(){
+    
+      var postText = document.getElementById("myPost").value;
+      var obj1 = {userText: postText};
+      firebase.database().ref('/Posts').push(obj1).catch(function(error) {
+        console.log(error.code);
+       });
+      }
+    
+      $(document).ready(function(){
+        var ref = firebase.database().ref('/Posts');
+        ref.on('value', function(snapshot) {
+          snapshot.forEach(function(allPosts) {
+            var childData = allPosts.val();
+            $("#addpostHere").append("<h4>" + childData.userText + "</h4>")
+            console.log(childData.userText);
+        });
+      });
+    });
+
+$(document).ready(function(){
+  $("#commentHide").click(function(event){
+    event.preventDefault();
+    $("#addcommenthere").toggle();
+  })
+})
+
+
+>>>>>>> a44683836dffba3be19a549c2065d410522c51af
