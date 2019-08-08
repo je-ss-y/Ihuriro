@@ -63,12 +63,29 @@
                 <li>Project/volunteer opportunities posted on the platform are purely non-commercial.</li>
             </ul>
         </div>
+        <br>
+        <br>
         <div>
+            <h4 id="addpostHere"></h4>
             <label> Leave your comment here:</label>
+            <div id="addcommenthere"></div>
+
             <br>
-            <textarea id="myComment" cols="50" rows="4"></textarea>
-            <button id="postComment" onclick="postMyComment()">Post</button>
+            <div class="rows">
+                <div class="col-sm-3">
+                    <textarea id="myComment" cols="50" rows="4"></textarea>
+                    <button id="addComment" onclick="myComment()">Comment</button>
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-3" id="moveMyPost">
+                    <textarea id="myPost" cols="50" rows="4"></textarea>
+                    <button id="addPost" onclick="myPost()">Post</button> 
+                </div>
+            </div>
         </div>
+        <br>
+        <br>
         <footer>
             <p>Contact Us:</p>
             <p>Tel no. <span>+250727993298 / +250786559810</span></p> 
