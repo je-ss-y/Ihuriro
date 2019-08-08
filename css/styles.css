@@ -84,29 +84,14 @@
 }
 
 #footer {
-    background-color: #d2e5eb;
+    background-color:rgba(7, 117, 136, 0.8);
     border: 2px;
     text-align: center;
+    color:black;
 }
 
-#donate {
-    margin-top: 90px;
-    padding: 5px;
-    border: 3px solid yellow;
-    width: 250px;
-    position: relative;
-    left: 50px;
-    background-color: yellow;
-}
-
-#location {
-    margin-top: 70px;
-    border: 3px solid rgb(70, 230, 70);
-    width: 110px;
-    position: relative;
-    left: 150px;
-    background-color: rgb(70, 230, 70);
-    ;
+#stylePost #styleComment {
+    color: black;
 }
 
   
@@ -126,7 +111,7 @@
     margin :0;
     padding :0;
     font-family :sans-serif;
-    color: aliceblue;
+    /* color: aliceblue; */
     font-family: 'Prompt', sans-serif;
   }
   .container {
@@ -140,9 +125,11 @@
   }
   .container .box {
     position: relative;
+    left: 50px;
+    background-color: rgb(22, 49, 53);
     width: 300px;
     height: 260px;
-    background-color : #ff0;
+    background-color : rgba(71, 84, 90, 0.247);
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
@@ -168,6 +155,7 @@
     background-color: rgba(7, 117, 136, 0.8);
     transform: scaleY(0);
     transition: transform .5s;
+    color:white;
   }
   .container .box:hover .details {
     transform: scaleY(1);
@@ -183,6 +171,7 @@
       text-align: center;
       font-weight: 700;
       background-color:  rgba(7, 117, 136, 0.8);
+      color:white;
   }
   #img4{
       margin-top: 30px;
@@ -192,11 +181,15 @@
 }
 #lastBox {
     position: relative;
-    right: -320px;
+    right: -370px;
 }
 h1 {
     font-family: 'Mitr', sans-serif;
     color: black;
     text-align: center;
 }
-  
+#PostSection {
+    position: relative;
+    right : -370px;
+    top: -70px;
+}
