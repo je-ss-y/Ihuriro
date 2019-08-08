@@ -118,21 +118,85 @@
       height:700px;
       background-repeat:no repeat;
   }
-  #headingwords{
-      color:white;
-      display:flex;
-      text-align:center;
-      flex-direction:column;
-      font-family: 'Playfair Display SC', serif;
-      position:relative;
-      top:120px;
-
+  #loginmyform{
+      display:none;
   }
-#contact {
-    margin-top: 30px;
-    border: 3px solid rgb(92, 147, 230);
-    width: 110px;
+
+  body {
+    margin :0;
+    padding :0;
+    font-family :sans-serif;
+    color: aliceblue;
+    font-family: 'Prompt', sans-serif;
+  }
+  .container {
+    width: 1280px;
+    min-height: 50px;
+    background-color: #fff;
+    margin: 70px auto 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap :wrap;
+  }
+  .container .box {
     position: relative;
-    left: 50px;
-    background-color: rgb(92, 147, 230);
+    width: 300px;
+    height: 260px;
+    background-color : #ff0;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+  }
+  .container .box .imgBox img {
+    max-width: 100%;
+    transition: transform 2s;
+    
+  }
+  .container .box:hover .imgBox img {
+    transform: scale(1.2);
+  }
+  .container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right :10px;
+    background-color: rgba(7, 117, 136, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+  }
+  .container .box:hover .details {
+    transform: scaleY(1);
+  }
+  .container .box .details .content p {
+    margin: 10px  ;
+  } 
+  #paragr5 {
+     position: relative;
+     bottom: -190px;
+     right: 299px;
+      font-family: italic;
+      text-align: center;
+      font-weight: 700;
+      background-color:  rgba(7, 117, 136, 0.8);
+  }
+  #img4{
+      margin-top: 30px;
+  }
+#begin {
+    font-size: 20px;
 }
+#lastBox {
+    position: relative;
+    right: -320px;
+}
+h1 {
+    font-family: 'Mitr', sans-serif;
+    color: black;
+    text-align: center;
+}
+  
