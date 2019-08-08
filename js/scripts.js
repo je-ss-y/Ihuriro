@@ -78,10 +78,3 @@ $(document).ready(function(){
 })
 
 
-function ClickEvent(){
-  $('div#addcommenthere.delete').click(function(e) {
-    var clickedPostId = e.target.offsetParent.id;
-    alert("you just clicked the post with id " + clickedPostId);
-    deletePost(clickedPostId);
-  });
-  }

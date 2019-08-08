@@ -1,77 +1,116 @@
-
 /* //nav style */
-.first{
-    display:flex;
-    justify-content:space-between;
-    padding:35px
-}
-.leftside{
-        display:flex;
 
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px
 }
-.first >.leftside>div{
- margin-right:20px;
- font-size:0.9em;
- text-transform:uppercase; 
 
+.leftside {
+    display: flex;
 }
-.nav-link{
-     height:20px;
-     border-bottom: 1px solid transparent;
-}
-.nav-link a{
-        color:#8a8a8a;
-        text-decoration:none;
-     
-}
-.nav-link a:hover{
-    background-color:#b3ffff;
 
+.first>.leftside>div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
+
+.nav-link {
+    height: 20px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    background-color: #b3ffff;
+}
+
+
 /* end of nav style */
+
 .ihuriro {
     text-align: center;
-    position:relative;
+    position: relative;
     bottom: -110px;
-    
 }
+
 .signup {
     background-color: rgb(190, 232, 248);
     height: 10%;
-    width : 25%;
+    width: 25%;
     margin: 0 auto;
     background: transparent;
-
 }
+
 .login {
-  order :1px solid black;
+    order: 1px solid black;
     background-color: rgb(190, 232, 248);
     height: 10%;
-    width : 25%;
+    width: 25%;
     margin: 0 auto;
     margin-top: 50px;
     background: transparent;
 }
+
 .signup form input {
-    width : 70%;
+    width: 70%;
     border-radius: 10%;
 }
+
 .login form input {
-    width : 70%;
+    width: 70%;
     border-radius: 10%;
 }
+
 #myVideo {
     background-size: contain;
     position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
-  }
-  #loginmyform{
-      display:none;
+}
 
-  }
-  /* #moveMyPost {
-      float: right;
-  } */
+#loginmyform {
+    display: none;
+}
+
+#footer {
+    background-color: #d2e5eb;
+    border: 2px;
+    text-align: center;
+}
+
+#donate {
+    margin-top: 90px;
+    padding: 5px;
+    border: 3px solid yellow;
+    width: 250px;
+    position: relative;
+    left: 50px;
+    background-color: yellow;
+}
+
+#location {
+    margin-top: 70px;
+    border: 3px solid rgb(70, 230, 70);
+    width: 110px;
+    position: relative;
+    left: 150px;
+    background-color: rgb(70, 230, 70);
+    ;
+}
+
+#contact {
+    margin-top: 30px;
+    border: 3px solid rgb(92, 147, 230);
+    width: 110px;
+    position: relative;
+    left: 50px;
+    background-color: rgb(92, 147, 230);
+}
