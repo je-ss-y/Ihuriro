@@ -31,7 +31,7 @@ firebase.initializeApp(firebaseConfig);
     
     var holdText = document.getElementById("myComment").value;
     var obj = {userText: holdText};
-    firebase.database().ref('/Comments').push(obj).then(function(){alert("success")}).catch(function(error) {
+    firebase.database().ref('/Comments').push(obj).catch(function(error) {
       console.log(error.code);
      });
     }
@@ -44,6 +44,7 @@ firebase.initializeApp(firebaseConfig);
           $("#addcommenthere").append("<p>" + childData.userText + "</p>")
           console.log(childData.userText);
         });
+        $("textarea#myComment").val('');
       });
     });
 
@@ -53,7 +54,7 @@ firebase.initializeApp(firebaseConfig);
     
       var postText = document.getElementById("myPost").value;
       var obj1 = {userText: postText};
-      firebase.database().ref('/Posts').push(obj1).then(function(){alert("success")}).catch(function(error) {
+      firebase.database().ref('/Posts').push(obj1).catch(function(error) {
         console.log(error.code);
        });
       }
@@ -65,7 +66,22 @@ firebase.initializeApp(firebaseConfig);
             var childData = allPosts.val();
             $("#addpostHere").append("<h4>" + childData.userText + "</h4>")
             console.log(childData.userText);
-          });
         });
-        $('#addpostHere').remove();
       });
+    });
+
+$(document).ready(function(){
+  $("#commentHide").click(function(event){
+    event.preventDefault();
+    $("#addcommenthere").toggle();
+  })
+})
+
+
+function ClickEvent(){
+  $('div#addcommenthere.delete').click(function(e) {
+    var clickedPostId = e.target.offsetParent.id;
+    alert("you just clicked the post with id " + clickedPostId);
+    deletePost(clickedPostId);
+  });
+  }
