@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script> -->
+
 
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
     <script src="js/jQuery.js"></script>
@@ -73,29 +73,15 @@
                 <li>Project/volunteer opportunities posted on the platform are purely non-commercial.</li>
             </ul>
         </div>
-        <br>
-        <br>
         <div>
-            <label> <u><b>Updated posts:</b></u></label>
-            <h4 id="addpostHere"></h4>
-            <label> <u><b>Leave your comment here:</b></u></label>
-            <div id="addcommenthere"></div>
-
+            <label> Leave your comment here:</label>
             <br>
-            <div class="rows">
-                <div class="col-sm-3">
-                    <textarea id="myComment" cols="50" rows="4"></textarea>
-                    <button id="addComment" onclick="myComment()">Comment</button>
-                    <button id="commentHide">Hide</button>
-                </div>
-                <br>
-                <br>
-                <div class="col-sm-3" id="moveMyPost">
-                    <textarea id="myPost" cols="50" rows="4"></textarea>
-                    <button id="addPost" onclick="myPost()">Post</button> 
-                </div>
-            </div>
+            <textarea id="myComment" cols="50" rows="4"></textarea>
+            <button id="postComment" onclick="postMyComment()">Post</button>
         </div>
+   
+        
+        
     </div>
     <footer id="footer">
         <div class="row">

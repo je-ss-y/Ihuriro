@@ -1,9 +1,10 @@
 /* //nav style */
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap');
 .first {
     display: flex;
     justify-content: space-between;
-    padding: 35px
+    padding: 35px;
+    position:relative;
 }
 
 .leftside {
@@ -37,12 +38,16 @@
     text-align: center;
     position: relative;
     bottom: -110px;
+    border:1px solid rgba(54, 185, 202, 0.8);
+    width:28%;
+    margin: 0 auto;
+    background-color:rgba(54, 185, 202, 0.8);
 }
 
 .signup {
     background-color: rgb(190, 232, 248);
     height: 10%;
-    width: 25%;
+    width: 35%;
     margin: 0 auto;
     background: transparent;
 }
@@ -68,16 +73,12 @@
 }
 
 #myVideo {
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom:0;
     min-width: 100%;
     min-height: 100%;
-}
-
-#loginmyform {
-    display: none;
 }
 
 #footer {
@@ -117,8 +118,13 @@
   }
   #headingwords{
       color:white;
+      display:flex;
       text-align:center;
-      margin-top:50px;
+      flex-direction:column;
+      font-family: 'Playfair Display SC', serif;
+      position:relative;
+      top:120px;
+
   }
 #contact {
     margin-top: 30px;
