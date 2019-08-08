@@ -31,12 +31,14 @@
     background-color: #b3ffff;
 }
 
-
+.logo{
+    width:50px;
+}
 /* end of nav style */
 
 .ihuriro {
     text-align: center;
-    position: relative;
+    position:relative;
     bottom: -110px;
     border:1px solid rgba(54, 185, 202, 0.8);
     width:28%;
