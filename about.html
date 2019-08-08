@@ -73,26 +73,29 @@
                 <li>Project/volunteer opportunities posted on the platform are purely non-commercial.</li>
             </ul>
         </div>
+        <br>
+        <br>
         <div>
-            <label> Leave your comment here:</label>
-            <br>
-            <textarea id="myComment" cols="50" rows="4"></textarea>
-            <button id="postComment" onclick="postMyComment()">Post</button>
-        </div>
-   
-        
-        <footer class="card-footer">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Contact Us:</p>
-                    <p>Tel no. <span>+250727993298 / +250786559810</span></p>
-                    <p>Email : <span>abcd@gmail.com / xywz@yahoo.fr</span></p>
-                </div>
-                <div class="col-md-6">
-                    <p>Location</p>
-                    <p>Address : <span>Kimironko/Kigali/Rwanda</span></p>
-                </div>
+            <label> <u><b>Updated posts:</b></u></label>
+            <h4 id="addpostHere"></h4>
+            <label> <u><b>Leave your comment here:</b></u></label>
+            <div id="addcommenthere"></div>
 
+            <br>
+            <div class="rows">
+                <div class="col-sm-3">
+                    <textarea id="myComment" cols="50" rows="4"></textarea>
+                    <button id="addComment" onclick="myComment()">Comment</button>
+                    <button id="commentHide">Hide</button>
+                </div>
+                <br>
+                <br>
+                <div class="col-sm-3" id="moveMyPost">
+                    <textarea id="myPost" cols="50" rows="4"></textarea>
+                    <button id="addPost" onclick="myPost()">Post</button> 
+                </div>
+            </div>
+        </div>
     </div>
     <footer id="footer">
         <div class="row">
